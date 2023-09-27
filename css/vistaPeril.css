@@ -1,93 +1,104 @@
-*{
+* {
     padding: 0;
     margin: 1px;
     box-sizing: border-box;
 }
-p{
+
+p {
     font-size: 1em;
-    color:rgb(199, 191, 191)
+    color: rgb(199, 191, 191)
 }
 
-h3{
+h3 {
     font-size: 1.2em;
 }
-.inicioSesion{
+
+.inicioSesion {
     color: #171718;
-    font-weight: bold; 
+    font-weight: bold;
     font-size: 1.2em;
 }
-body{
+
+body {
     font-family: 'Roboto Slab', serif;
     background-color: #000000;
 }
-header{
-    
-   
+
+header {
+
+
     background-color: white;
     grid-area: header;
     display: flex;
     justify-content: space-between;
- 
-}
-label{
-    font-weight: bold; 
-}
-a{
-    color: #171718;
-    font-weight: bold; 
+
 }
 
-.galeria-section{
-    
+label {
+    font-weight: bold;
+}
+
+a {
+    color: #171718;
+    font-weight: bold;
+}
+
+.galeria-section {
+
     background-color: rgb(235, 224, 224);
     grid-area: galeria;
     display: flex;
     flex-direction: column;
-   
+
 }
 
 
 
-footer{
-    
+footer {
+
     background-color: #171718;
     grid-area: footer;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.iconos-usuarios h3{
+
+.iconos-usuarios h3 {
     color: rgb(0, 0, 0);
 }
-footer h3{
+
+footer h3 {
     color: aliceblue;
 }
 
-.contenedor{
+.contenedor {
     display: grid;
     height: 100vh;
     grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-template-rows: 20% auto  10%;
+    grid-template-rows: 20% auto 10%;
     grid-gap: 5px;
 
     grid-template-areas:
-    "header header header"
-    "galeria  galeria galeria" 
-    "footer footer footer ";
+        "header header header"
+        "galeria  galeria galeria"
+        "footer footer footer ";
 }
+
 /* header div{
     height: 100% ;
     width: calc(50% - 1px);
 } */
-.logo{
+.logo {
     flex: 30%;
 }
-.iconos-usuarios{
-   text-align: right;
+
+.iconos-usuarios {
+    text-align: right;
     flex: 70%;
 }
-.logo img{
-   
+
+.logo img {
+
     height: 100%;
 }
 
@@ -95,11 +106,12 @@ footer h3{
 
 /* *************************************************** */
 /* galeria de discos */
-.formulario-debajo{
+.formulario-debajo {
     background-color: #171718;
     height: 100%;
 }
-.formulario{
+
+.formulario {
     background-color: white;
     width: 50%;
     margin: auto;
@@ -109,14 +121,17 @@ footer h3{
     justify-content: center;
 
 }
-.formulario article{
+
+.formulario article {
     height: 15%;
 }
-.botones{
+
+.botones {
     text-align: left;
     margin-top: 16px;
 }
-.botones a{
+
+.botones a {
     border-radius: 3px;
     list-style: none;
     text-decoration: none;
@@ -124,26 +139,29 @@ footer h3{
     background-color: #171718;
     color: aliceblue;
 }
-.premium{
+
+.premium {
     color: rgb(65, 146, 119);
     font-size: 1.5em;
-    
+
 }
 
 /* ********************************************************************************************************************************************************************************* */
-@media screen and (min-width:60em){
-    h3{
+@media screen and (min-width:60em) {
+    h3 {
         font-size: 150%;
     }
-    .inicioSesion{
+
+    .inicioSesion {
         font-size: 150%;
-        }
+    }
 
 
 }
-@media screen and (min-width:85em){
-    h3{
+
+@media screen and (min-width:85em) {
+    h3 {
         font-size: 180%;
     }
-   
+
 }
