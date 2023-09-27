@@ -116,7 +116,10 @@ footer h3{
     text-align: left;
     margin-top: 16px;
 }
-.botones input{
+.botones a{
+    border-radius: 3px;
+    list-style: none;
+    text-decoration: none;
     padding: 5px;
     background-color: #171718;
     color: aliceblue;
