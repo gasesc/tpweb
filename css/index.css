@@ -1,0 +1,297 @@
+*{
+    padding: 0;
+    margin: 2px 2px 2px 2px;
+    box-sizing: border-box;
+   
+
+}
+body{
+    font-family: 'Roboto Slab', serif;
+
+}
+h4{
+    font-size: 1.5em;
+}
+p{
+    
+    font-size: 1em;
+    color:rgb(199, 191, 191)
+}
+h3{
+    font-size: 1.2em;
+}
+.inicioSesion{
+    color: #171718;
+    font-weight: bold; 
+    font-size: 1.2em;
+}
+body{
+    
+    
+    background-color: #000000;
+}
+header{
+    
+   
+    background-color: white;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    background-color: #171718;
+    grid-area: nav;
+}
+.galeria-section{
+    background-color: #1f2124;
+    grid-area: galeria;
+    display: flex;
+    flex-direction: column;
+   
+}
+.musicaSonando-section{
+background-color: #171718;
+grid-area: musica;
+display: flex;
+
+
+
+}
+
+
+footer{
+   
+    background-color: #171718;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconos-usuarios h3{
+    color: rgb(0, 0, 0);
+}
+footer h3{
+    
+    color: aliceblue;
+}
+
+.contenedor{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 20%  18% auto 20% 10%;
+    grid-gap: 5px;
+
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "galeria  galeria"
+    "musica musica"
+    "footer footer";
+}
+/* header div{
+    height: 100% ;
+    width: calc(50% - 1px);
+} */
+.logo{
+    flex: 30%;
+}
+.iconos-usuarios{
+   text-align: right;
+    flex: 70%;
+}
+.logo img{
+   
+    height: 100%;
+}
+/* ************   NAV    **************** */
+
+.menu ul{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+   
+    border: 0.0625em #393d42 solid; 
+    
+}
+.menu li{
+    height: 25%;
+    border: 0.0625em #393d42 solid; 
+    
+}
+
+
+.menu a{
+    height: 100%;
+    text-align: center;
+    color: aliceblue;
+    text-decoration: none;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 1em;
+  
+}
+.menu li:hover{
+   
+    background-color: aliceblue;
+    color: #29b5ac;
+}
+
+.menu a:hover{
+    background-color: aliceblue;
+    color: #29b5ac;
+    
+}
+/* ******************************************************* */
+/* discon sonando */
+.division{
+   
+    width: calc(50% - 10px);
+    text-align: center;
+}
+.division div{
+    width: 90%;
+    margin: auto;
+    background-color: #393d42;
+    height: 100%;
+}
+.division img{
+    
+    height: 100%;
+}
+
+/* *************************************************** */
+/* galeria de discos */
+.contenedor-section{
+    
+ height: 70%;
+display: flex;
+flex-wrap: nowrap;
+justify-content: space-between;
+}
+.contenedor-section article{
+   
+    
+    position: relative;
+    width: calc(50% - 0.5em);
+    
+}
+.oculto{
+    display: none;
+}
+.contenedor-section article img{
+    max-width: 100%;
+}
+.estrella{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: rgb(0, 0, 0);
+    
+}
+.dibujo-reproductor{
+    height: 25%;
+}
+
+.galeria-section h4{
+    height: auto;
+    text-align: center;
+    color: aliceblue;
+}
+.dibujo-reproductor img{
+    width: 100%;
+    height: 100%;
+}
+
+.oculto2{
+    display: none;
+}
+/* ********************************************************************************************************************************************************************************* */
+@media screen and (min-width:60em){
+   h3{
+    font-size: 150%;
+   }
+    p{
+        font-size: 150%;
+    }
+    .contenedor{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 20%  auto auto 20% 10%;
+        grid-gap: 5px;
+    
+        grid-template-areas:
+        "header header"
+        "nav nav"
+        "galeria  galeria"
+        "musica musica"
+        "footer footer";
+    }
+nav{
+    margin: auto;
+}
+.menu ul{
+   flex-direction: row;
+}
+.oculto{
+    display: block;
+}
+
+
+
+
+
+
+}
+/* ********************************************************************************************************************************************************************************** */
+@media screen and (min-width:85em){
+    h3{
+        font-size: 180%;
+    }
+    .inicioSesion{
+        font-size: 150%;
+        }
+
+.contenedor{
+    grid-template-columns:25% 75%;
+    grid-template-rows: 25% auto auto 20% 10%;
+    grid-template-areas:
+    "nav header "
+    "nav galeria "
+    "musica galeria "
+    "musica galeria"
+    "footer footer";
+}
+nav{
+    margin:0;
+}
+.menu ul{
+   flex-direction: column;
+}
+.musicaSonando-section{
+    flex-direction: column;
+}
+.division{
+    width: 100%;
+    height: 50%;
+}
+.division img{
+    max-width: 100%;
+}
+.contenedor-section{
+    flex-wrap: wrap;
+}
+.contenedor-section article{
+    width: calc(33% - 5px);
+}
+.oculto2{
+    display: block;
+}
+
+}

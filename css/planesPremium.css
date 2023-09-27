@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 1px;
+    box-sizing: border-box;
+}
+p{
+    font-size: 1em;
+    color:rgb(199, 191, 191)
+}
+body{
+    font-family: 'Roboto Slab', serif;
+    background-color: #000000;
+}
+.inicioSesion{
+    color: #171718;
+    font-weight: bold; 
+    font-size: 1.2em;
+}
+header{
+    
+   
+    background-color: white;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+
+.galeria-section{
+    
+    background-color: white;
+    grid-area: galeria;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+
+footer{
+    
+    background-color: #171718;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconos-usuarios h3{
+    color: rgb(0, 0, 0);
+}
+footer h3{
+    color: aliceblue;
+}
+
+.contenedor{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 20%  auto  10%;
+    grid-gap: 5px;
+
+    grid-template-areas:
+    "header header header"
+    "galeria  galeria galeria" 
+    "footer footer footer ";
+}
+/* header div{
+    height: 100% ;
+    width: calc(50% - 1px);
+} */
+.logo{
+    flex: 30%;
+}
+.iconos-usuarios{
+   text-align: right;
+    flex: 70%;
+}
+.logo img{
+   
+    height: 100%;
+}
+
+
+
+/* *************************************************** */
+/* galeria de discos */
+.contenedor-planes{
+    
+height: 80%;
+display: flex;
+flex-direction: column;
+}
+.division{
+    background-color: #171718;
+    text-align: center;
+   width: 100%;
+   height: 33.3%;
+    
+}
+.division  div{
+    margin: auto;
+    width: 60%;
+    height: 60%;
+}
+.division p{
+    height: 30%;
+}
+.division input{
+    height: 5%;
+}
+
+
+.division div img{
+    max-width: 100%;
+  
+    height: 100%;
+    border-radius: 50%;
+}
+
+.dibujo-reproductor{
+    height: 25%;
+}
+
+.galeria-section h4{
+    background-color: #171718;
+    color: white;
+    height: auto;
+    font-size: 1.3em;
+    text-align: center;
+}
+.botones{
+    width: 100%;
+    text-align:center;
+    margin-top: 16px;
+}
+.botones input{
+    padding: 5px;
+    background-color: #171718;
+    color: aliceblue;
+}
+
+/* ********************************************************************************************************************************************************************************* */
+@media screen and (min-width:60em){
+    .botones input{
+        font-size: 1em;
+        padding: 10px;
+        width: 150px;
+    }
+ .contenedor-planes{
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 80%;
+
+ }
+ .division{
+    width: calc(33.3% - 2px);
+    height: 100%;
+ }
+
+ h3{
+    font-size: 150%;
+}
+.inicioSesion{
+    font-size: 150%;
+    }
+
+
+
+
+
+}
+/* ********************************************************************************************************************************************************************************** */
+@media screen and (min-width:85em){
+    h3{
+        font-size: 180%;
+    }
+
+}
