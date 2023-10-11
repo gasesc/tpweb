@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Roboto Slab', serif;
-
+    overflow-x: hidden;
 }
 
 h4 {
@@ -90,9 +90,10 @@ footer h3 {
 .contenedor {
     display: grid;
     height: 100vh;
+ 
     grid-template-columns: 25% 75%;
-    grid-template-rows: 20% 18% auto 20% 10%;
-    grid-gap: 5px;
+    grid-template-rows: 20% 20% auto 20% 10%;
+    /* grid-gap: 5px; */
 
     grid-template-areas:
         "header header"
@@ -239,7 +240,7 @@ footer h3 {
 }
 
 /* ********************************************************************************************************************************************************************************* */
-@media screen and (min-width:60em) {
+@media screen and (min-width:45em) {
     h3 {
         font-size: 150%;
     }
@@ -253,7 +254,7 @@ footer h3 {
         height: 100vh;
         grid-template-columns: 25% 75%;
         grid-template-rows: 20% auto auto 20% 10%;
-        grid-gap: 5px;
+        /* grid-gap: 5px; */
 
         grid-template-areas:
             "header header"

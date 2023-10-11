@@ -64,7 +64,7 @@ footer h3 {
     height: 100vh;
     grid-template-columns: 33.3% 33.3% 33.3%;
     grid-template-rows: 20% auto 10%;
-    grid-gap: 5px;
+    /* grid-gap: 5px; */
 
     grid-template-areas:
         "header header header"
@@ -159,7 +159,7 @@ footer h3 {
 }
 
 /* ********************************************************************************************************************************************************************************* */
-@media screen and (min-width:60em) {
+@media screen and (min-width:45em) {
     .botones input {
         font-size: 1em;
         padding: 10px;
