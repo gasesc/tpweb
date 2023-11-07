@@ -101,6 +101,13 @@ footer h3 {
 
     height: 100%;
 }
+.mensajeOculto{
+    display: none;
+}
+.mensajeMostrar{
+    display: block;
+    color: red;
+}
 
 
 
@@ -138,6 +145,16 @@ footer h3 {
     padding: 5px;
     background-color: #171718;
     color: aliceblue;
+}
+.botones input{
+    border-radius: 3px;
+    list-style: none;
+    text-decoration: none;
+    padding: 5px;
+    background-color: #171718;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;
 }
 
 .premium {

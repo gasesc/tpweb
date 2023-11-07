@@ -38,9 +38,10 @@
                         <input id="pass" type="password" name="pass">
                     </article>
 
-                    <article>
+                    <article id="agregarCampo">
                         <label for="pass">Repita contraseña</label>
-                        <input id="pass" type="password" name="pass">
+                        <input id="pass2" type="password" name="pass">
+                        <p class="mensajeOculto" id="mensajeInteractivo">la contraseña no es igual</p>
                     </article>
 
                     <article>
@@ -55,12 +56,14 @@
                     </article>
 
                     <a href="planesPremium.html" class="premium">premium</a>
-                    <a href="index.html">eliminar usuario</a>
+                    <a href="index.html" id="eliminar">eliminar usuario</a>
 
 
-                    <article class=" botones">
+                    <article class="botones">
                         <a href="index.html">Home</a>
-                        <a href="index.html">Guardar</a>
+                        <input type="submit" value="GUARDAR" id="guardar">
+                        
+                        
                     </article>
 
 
@@ -76,7 +79,7 @@
             <h3>Osmar Gaston Escobar</h3>
         </footer>
     </div>
-
+<script src="js/vistaPerfil.js"></script>
 </body>
 
 </html>

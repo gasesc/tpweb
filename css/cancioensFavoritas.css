@@ -43,18 +43,21 @@ nav {
 }
 
 .galeria-section {
+
     background-color: white;
     grid-area: galeria;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
 }
 
 .tabla {
-    height: 100%;
+     /* height: 100%;  */
     border: 1px solid black;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
+   
     /* Espacio entre las celdas */
 }
 

@@ -212,10 +212,13 @@ footer h3 {
     max-width: 100%;
 }
 
-.estrella {
+button{
     position: absolute;
     right: 0;
     top: 0;
+}
+.estrella {
+ 
     color: rgb(0, 0, 0);
 
 }
