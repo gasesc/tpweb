@@ -45,7 +45,7 @@ botonIniciarInput.addEventListener("click",()=>{
        let nombreH1=nombreUsuario;
        console.log(nombreH1);
        localStorage.setItem("nombreDeUsuarioH1",JSON.stringify(nombreH1));
-       window.location.href = "index.html";
+       window.location.href = "home.html";
      } else {
        console.log("Nombre de usuario o contraseña incorrectos");
      }

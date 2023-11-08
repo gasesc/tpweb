@@ -17,7 +17,7 @@
         <header>
             <div class="logo"><a href="index.html"><img src="img/logo quetzal.png" alt=""></a></div>
             <div class="iconos-usuarios">
-                <h3>nombre de usuario</h3>
+                <h3 id="usuarioHeader">nombre de usuario</h3>
                 <a href="index.html" class="inicioSesion">iniciar sesion</a>
                 <a href="vistaPerfil.html"><i class="fa-solid fa-user inicioSesion"></i></a>
             </div>
@@ -30,23 +30,23 @@
                 <form action="#" method="post" class="formulario">
                     <article>
                         <label for="usuario">Nombre y apellido</label>
-                        <input id="usuario" type="text" name="usuario " placeholder="Ingrese usuario">
+                        <input id="usuario" type="text" name="usuario " placeholder="">
                     </article>
 
                     <article>
                         <label for="pass">Contraseña</label>
-                        <input id="pass" type="password" name="pass">
+                        <input id="pass" type="password" name="pass" placeholder="">
                     </article>
 
                     <article id="agregarCampo">
                         <label for="pass">Repita contraseña</label>
-                        <input id="pass2" type="password" name="pass">
+                        <input id="pass2" type="password" name="pass" placeholder="">
                         <p class="mensajeOculto" id="mensajeInteractivo">la contraseña no es igual</p>
                     </article>
 
                     <article>
                         <label for="fecha">Fecha de nacimiento</label>
-                        <input id="fecha" type="date" name="fecha">
+                        <input id="fecha" type="date" name="fecha" placeholder="">
                     </article>
 
 
@@ -79,7 +79,8 @@
             <h3>Osmar Gaston Escobar</h3>
         </footer>
     </div>
-<script src="js/vistaPerfil.js"></script>
+    <script src="js/usuarios.js"></script>
+<script src="js/perfilGuardado.js"></script>
 
 </body>
 

@@ -1,99 +1,34 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <script src="https://kit.fontawesome.com/2edf5860bb.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
-    <title>index</title>
+    <link rel="stylesheet" href="css/inisioSesion.css">
+    <title>inicioSesion</title>
 </head>
 
 <body>
-    <div class="contenedor">
-        <header>
-            <div class="logo"><a href="index.html"><img src="img/logo quetzal.png" alt=""></a></div>
-            <div class="iconos-usuarios">
-                <h3 id="usuarioHeader">nombre de usuario</h3>
-                <a href="inicioSesion.html" class="inicioSesion">iniciar sesion</a>
-                <a href="vistaPerfil.html"><i class="fa-solid fa-user inicioSesion"></i></a>
-            </div>
-        </header>
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="buscar.html">BUSCAR</a></li>
-                <li><a href="albums.html">MIS ALBUMS </a></li>
-                <li><a href="cancionesFavoritas.html">MIS FAVORITOS</a></li>
-            </ul>
-        </nav>
 
-        <section class="galeria-section">
-            <h4>musica recomendada</h4>
+    <section class="contenedor">
+        <form action="#" method="post">
 
-            <section class="contenedor-section">
-                <article>
-                    <a href="musicaSonando.html"><img src="img/sui generis.jpg" alt=""></a>
-                   <button><i class="fa-regular fa-star estrella" id="Album1"></i></button> 
-                </article>
+            <label for="usuario">Usuario</label>
+            <input id="usuario" type="text" name="usuario" placeholder="Ingrese su nombre de usuario ">
+            <label for="contraseña">contraseña</label>
+            <input id="contraseña" type="text" name="contraseña" placeholder="ingrese una contraseña">
 
-                <article>
-                    <a href="musicaSonando.html"><img src="img/charly.jpg" alt=""></a>
-                    <button><i class="fa-regular fa-star estrella" id="Album2"></i></button> 
-                </article>
-
-                <article class="oculto">
-                    <a href="musicaSonando.html"><img src="img/fito.jpg" alt=""></a>
-                    <button><i class="fa-regular fa-star estrella" id="Album3"></i></button>
-                </article>
-
-                <article class="oculto">
-                    <a href="musicaSonando.html"><img src="img/spinetta.jpg" alt=""></a>
-                    <button><i class="fa-regular fa-star estrella" id="Album4"></i></button>
-                </article>
-
-                <article class="oculto2">
-                    <a href="musicaSonando.html"><img src="img/intoxicados.jpg" alt=""></a>
-                    <button><i class="fa-regular fa-star estrella" id="Album5"></i></button>
-                </article>
-
-                <article class="oculto2">
-                    <a href="musicaSonando.html"><img src="img/airbag.jpg" alt=""></a>
-                   <button><i class="fa-regular fa-star estrella" id="Album6"></i></button> 
-                </article>
-
-
-
-            </section>
-            <section class="dibujo-reproductor">
-                <img src="img/reproductor.png" alt="">
-            </section>
-
-        </section>
-        <section class="musicaSonando-section">
-            <article class="division">
-                <div><img src="img/sui generis.jpg" alt=""></div>
-            </article>
-            <article class="division">
-                <div>
-                    <p>Sui Genereris</p>
-                    <p>Banda argentina formada por Nito mestre y Charly Garcia pioneros en el rock nacional argentino
-                    </p>
-                </div>
-
-            </article>
-
-        </section>
-        <footer>
-            <h3>Osmar Gaston Escobar</h3>
-        </footer>
-    </div>
-<script src="js/cargarTemas.js"></script>
-<script src="js/usuarios.js"></script>
-<script src="js/index.js"></script>
+            <a href="home.html" class="boton" id="botonIniciar">iniciar sesion</a>
+        </form>
+        <a href="vistaPerfil.html">Regisrarme</a>
+    </section>
+ <script src="js/cargarTemas.js"></script>   
+<script src="js/cargarPlanes.js"></script>
+<script src="js/inicioSesion.js"></script>
 </body>
+
 
 </html>

@@ -10,6 +10,7 @@ if(nombreUsuarioCargado){
       if(usuario.nombre===nombreUsuarioCargado){
         usuario.conectado=true;
         inicioSesion.textContent="cerrar sesion";
+        usuaioHeader.textContent=usuario.nombre;
         break;
       }
    }
@@ -27,8 +28,10 @@ if(nombreUsuarioCargado){
            usuario.conectado=false;
            localStorage.setItem("usuariosCargados",JSON.stringify(usuariosCargados));
            inicioSesion.textContent="iniciar sesion";
+           usuaioHeader.textContent="nombre de usuario"
            localStorage.removeItem("nombreDeUsuarioH1");
            nombreUsuarioCargado=null;
+           window.location.href="index.html"
            break;
          }
       }
