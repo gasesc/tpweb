@@ -6,7 +6,8 @@ mailInput=document.querySelector("#mail");
 botonGuardarInput=document.querySelector("#guardar");
 mensajeInteractivo=document.querySelector("#mensajeInteractivo");
 botonEliminar=document.querySelector("#eliminar");
-
+const usuariosCargadosNuevamente = JSON.parse(localStorage.getItem("usuariosCargados"));
+const nombreDeUsuarioSesionAbierta = JSON.parse(localStorage.getItem("nombreDeUsuarioH1"));
 let contraseñaInvertida;
 let usuariosArray;
 let nombreUsuarioIcono;
@@ -85,7 +86,8 @@ botonGuardarInput.addEventListener("click",()=>{
 botonEliminar.addEventListener("click",()=>{
   
   localStorage.removeItem("usuariosCargados");
- 
+  localStorage.removeItem("nombreDeUsuarioH1")
 });
 
 controlDeUsuarios();
+

@@ -184,7 +184,24 @@ label {
     display: block;
     color: white;
 }
+.popUp{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border: 1px solid black;
+}
 
+.popUp button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
 /* ********************************************************************************************************************************************************************************* */
 @media screen and (min-width:45em) {
 
