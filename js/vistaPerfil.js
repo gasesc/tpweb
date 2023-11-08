@@ -29,7 +29,7 @@ class Usuario {
       this.cancionesFavoritas=[];
       this.premium=false;
       this.premiumGuardado;
-      this.TipoDePremium;
+      this.TipoDePremiumPagado;
     }
 }
 

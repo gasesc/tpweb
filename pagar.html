@@ -25,11 +25,11 @@
 
 
         <main class="galeria-section">
-            <h4>ELEGISTE EL PLAN</h4>
+            <h4 id="planTitulo">ELEGISTE EL </h4>
             <section class="foto-descripcion">
-                <div class="contenedor-foto"><img src="img/planMensualDibujo.jpg" alt=""></div>
-                <div>
-                    <p> ¡¡¡Con el plan mensual llevate la mejor musica controlando lo que gastas!!!</p>
+                <div class="contenedor-foto"><img src="img/planMensualDibujo.jpg" id="fotoDefault" alt=""></div>
+                <div id="contenedorDescripcion">
+                    <p id="descripcion"> ¡¡¡Con el plan mensual llevate la mejor musica controlando lo que gastas!!!</p>
                 </div>
             </section>
 
@@ -37,7 +37,8 @@
                 <form action="#" method="post" class="formulario">
                     <article>
                         <label for="tarjeta">TARJETA</label>
-                        <input id="tarjeta" type="number" name="tarjeta" placeholder="Ingrese numero" min="0" max="200">
+                        <input id="tarjeta" type="number" name="tarjeta" placeholder="Ingrese numero" min="0" >
+                        <p class="ocultarMensaje" id="mensajeTarjeta">Valor incorrecto</p>
                     </article>
 
                     <article><label for="fecha">VTO</label>
@@ -46,7 +47,8 @@
 
                     <article>
                         <label for="cvc">CVC</label>
-                        <input id="cvc" type="number" name="cvc" placeholder="Ingrese numero" min="0" max="200">
+                        <input id="cvc" type="number" name="cvc" placeholder="Ingrese numero" min="0">
+                        <p class="ocultarMensaje" id="mensajeCvc">Valor incorrecto</p>
                     </article>
 
                     <article>
@@ -57,19 +59,22 @@
                     <article>
                         <a href="index.html" class="boton">cancelar</a>
                         <!-- <a href="index.html" class="boton">pagar</a> -->
-                        <input type="submit" value="pagar">
+                        <input type="submit" value="pagar" id="pagar">
                     </article>
 
 
                 </form>
-
-
+                
+                <dialog id="popUp">
+                    <p>PAGO EXITOSO</p>
+                    <button id="aceptar">aceptar</button>
+                </dialog>
         </main>
         <footer>
             <h3>Osmar Gaston Escobar</h3>
         </footer>
     </div>
-
+<script src="js/pagar.js"></script>
 </body>
 
 </html>

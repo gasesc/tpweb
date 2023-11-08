@@ -176,7 +176,14 @@ label {
     color: white;
 
 }
-
+.ocultarMensaje{
+    display: none;
+    
+}
+.mostrarMensaje{
+    display: block;
+    color: white;
+}
 
 /* ********************************************************************************************************************************************************************************* */
 @media screen and (min-width:45em) {
