@@ -43,7 +43,7 @@ if (nombreDeUsuarioSesionAbierta) {
   
     if (!seleccionado) {
       alert("Por favor, seleccione una opción.");
-      return false; // Impide que el formulario se envíe
+      return false; 
     }
         localStorage.setItem("usuariosCargados",JSON.stringify(usuariosCargadosNuevamente));
         window.location.href = "pagar.html";
@@ -51,7 +51,6 @@ if (nombreDeUsuarioSesionAbierta) {
     
    
 
-     // Permite que el formulario se envíe si al menos una opción está seleccionada
     
   })
 

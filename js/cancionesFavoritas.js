@@ -26,7 +26,7 @@ for (const listaDeCanciones of usuarioEncontrado.cancionesFavoritas) {
     boton.className = "celda";
     boton.innerHTML='<a href="musicaSonando.html"><i class="fa-solid fa-play"></i></a>'
   
-    // Crear celdas para la fila
+    
     let nombreCell = document.createElement("div");
     nombreCell.className = "celda";
     nombreCell.textContent = nombre;
@@ -45,7 +45,7 @@ for (const listaDeCanciones of usuarioEncontrado.cancionesFavoritas) {
     reproduccionesCell.className = "celda";
     reproduccionesCell.textContent = reproducciones;
   
-    // Agregar las celdas a la fila
+    
     tablaSection.appendChild(boton);
     tablaSection.appendChild(nombreCell);
     tablaSection.appendChild(albumCell);

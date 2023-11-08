@@ -51,14 +51,7 @@ const completarCampos = () => {
   fecha=fechaInput.value;
   mail = mailInput.value;
 };
-// const completarAntes=()=>{
-// nombreUsuarioInput.value=usuarioEncontrado.nombre;
-// password1Input.value=usuarioEncontrado.contraseña;
-// password2Input=usuarioEncontrado.contraseña;
-// fechaInput.value=usuarioEncontrado.fechaDeNacimiento;
-// mailInput.value=usuarioEncontrado.email;
-// }
-// completarAntes();
+
 contraseñaInvertida=usuarioEncontrado.contraseña;
 
 nombreUsuarioInput.addEventListener("keyup", completarCampos);

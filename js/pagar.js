@@ -67,7 +67,7 @@ function validarCVC() {
   }
 }
 
-// Agregar escuchas de eventos para validar los campos
+
 document.getElementById("tarjeta").addEventListener("keyup", validarNumeroTarjeta);
 document.getElementById("cvc").addEventListener("input", validarCVC);
 

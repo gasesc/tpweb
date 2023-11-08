@@ -27,13 +27,13 @@ contraseñaInput.addEventListener("keyup", llenarContraseñaUsuario);
 
 botonIniciarInput.addEventListener("click",()=>{
       
-   // console.log(JSON.parse(localStorage.getItem("usuariosCargados")));
+   
    event.preventDefault();
   
    const usuariosCargados = JSON.parse(localStorage.getItem("usuariosCargados"));
    
    if (usuariosCargados) {
-     // Verificar si hay algún usuario con el nombre y contraseña proporcionados
+    
      const usuarioEncontrado = usuariosCargados.find((usuario) => {
        return usuario.nombre === nombreUsuario && usuario.contraseña === contraseñaInicioSesionInvertida ;
      });

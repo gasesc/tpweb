@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   
-    // Función para actualizar la interfaz
+    
     function actualizarInterfaz() {
       iconoFavoritos.forEach(function (icono) {
         let id = icono.getAttribute("id");
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   
-    // Llama a la función para actualizar la interfaz al cargar la página
+    
     actualizarInterfaz();
   
     iconoFavoritos.forEach(function (icono) {
@@ -41,22 +41,22 @@ document.addEventListener("DOMContentLoaded", function () {
   
         if (album) {
           if (usuarioEncontrado.albumFavoritos.some((favorito) => favorito.nombre === album.nombre)) {
-            // Si el álbum está en favoritos, quítalo
+          
             var albumIndex = usuarioEncontrado.albumFavoritos.findIndex((favorito) => favorito.nombre === album.nombre);
             if (albumIndex !== -1) {
               usuarioEncontrado.albumFavoritos.splice(albumIndex, 1);
               usuarioEncontrado.cancionesFavoritas.splice(albumIndex, 1);
             }
           } else {
-            // Si el álbum no está en favoritos, agrégalo
+            
             usuarioEncontrado.albumFavoritos.push(album);
             usuarioEncontrado.cancionesFavoritas.push(album.canciones);
           }
   
-          // Actualiza la interfaz después de realizar cambios en los favoritos
+         
           actualizarInterfaz();
   
-          // Actualiza la información en el almacenamiento local
+          
           localStorage.setItem("usuariosCargados", JSON.stringify(usuariosCargadosNuevamente));
         }
       });

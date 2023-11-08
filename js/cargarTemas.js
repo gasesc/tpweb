@@ -55,4 +55,4 @@ const albums = [
   },
 ];
 localStorage.setItem("albums",JSON.stringify(albums));
-//localStorage.removeItem("albums");
+
